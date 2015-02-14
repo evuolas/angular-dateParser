@@ -1,5 +1,5 @@
 angular.module('dateParser', [])
-    .factory('dateParserHelpers', [function() {
+    .factory('dateParser2Helpers', [function() {
 
         'use strict';
 
@@ -23,7 +23,7 @@ angular.module('dateParser', [])
             }
         };
     }])
-    .factory('$dateParser', ['$locale', 'dateParserHelpers', function($locale, dateParserHelpers) {
+    .factory('$dateParser2', ['$locale', 'dateParser2Helpers', function($locale, dateParserHelpers) {
 
         'use strict';
 
@@ -252,7 +252,7 @@ angular.module('dateParser', [])
 
                                 i_val += 5;
                             }
-                        }                        
+                        }
 
                         if (z > 720 || z < -720) {
                             throw 'Invalid timezone';
