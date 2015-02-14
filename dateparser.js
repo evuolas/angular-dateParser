@@ -1,4 +1,4 @@
-angular.module('dateParser', [])
+angular.module('dateParser2', [])
     .factory('dateParser2Helpers', [function() {
 
         'use strict';
